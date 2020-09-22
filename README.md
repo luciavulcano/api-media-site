@@ -1,3 +1,5 @@
+https://luciavulcano.github.io/api-media-site/
+
 funcionalidades:
 
 - Calculo de média de notas a partir de uma API (http://api.mathjs.org/v4), usando o método GET;
