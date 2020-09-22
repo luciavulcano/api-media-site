@@ -1,0 +1,39 @@
+.card {
+   box-shadow: 3px 3px 10px gray;
+}
+
+.card__posicao {
+    object-fit: cover;
+    object-position: 0 15%;
+    height: 200px;
+}
+
+.card-text {
+    font-size: .8rem;
+
+}
+
+.card__texto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__disponibilidade {
+    color: green;
+    font-weight: bold;
+    font-size: .8rem; 
+}
+
+.card__indisponibilidade {
+    color: red;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.btn__detalhes {
+    background-color: #107F92 !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke !important;
+    box-shadow: 3px 3px 10px gray;
+}

@@ -1,0 +1,34 @@
+@media (min-width: 768px) {
+    .card {
+        margin-right: 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .navbar li {
+        float: left;
+        padding: 1rem 1.2rem;
+        font-size: 1.2rem;
+    }
+
+    .navbar .navbar__menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .navbar .menu__icone {
+        display: none;
+    }
+
+    .navbar__menu__checkbox {
+        vertical-align: -6%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        margin-right: 4rem;
+    }
+}

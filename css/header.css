@@ -1,0 +1,40 @@
+.cabecalho__titulo {
+    font-size: 4rem;
+    font-weight: bolder;
+    margin: 2.5rem;
+    margin-bottom: 0;
+    text-shadow: 3px 3px 1px gray;
+}
+
+.cabecalho__sub-titulo {
+    margin-bottom: 2.5rem;
+    margin: 2.5rem;
+    margin-top: 0;
+    text-shadow: 3px 3px 5px gray;
+}
+
+.main__titulo {
+    margin: 1rem 2.5rem;
+    margin-bottom: 0;
+}
+
+.btn__limpar {
+    text-transform: uppercase;
+}
+
+.btn__proxima-pagina {
+    text-transform: uppercase;
+}
+
+.navbar__menu__checkbox {
+    border: 0.1em solid #000;
+    border-radius: .2rem;
+    cursor: pointer;
+    display: inline-block;
+    height: 1rem;
+    margin-right: .2rem;
+    padding-left: .2rem;
+    padding-bottom: .3rem;
+    vertical-align: -8%;
+    width: 1rem;
+}

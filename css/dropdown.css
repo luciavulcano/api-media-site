@@ -1,0 +1,25 @@
+.navbar__drop-down {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  transition: max-height .4s, opacity .3s;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.navbar__drop-down>.navbar__item {
+  height: 100%;
+  transition: transform .4s;
+  transform: translateY(-300%);
+}
+
+.dropdown__wrapper:hover .navbar__drop-down {
+  max-height: 20rem;
+  opacity: 1;
+}
+
+.dropdown__wrapper:hover>.navbar__drop-down .navbar__item {
+  transform: translateY(0%);
+}

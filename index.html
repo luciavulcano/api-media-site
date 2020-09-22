@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/menu-hamburguer.css">
+    <link rel="stylesheet" type="text/css" href="css/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="css/cards.css">
+    <link rel="stylesheet" type="text/css" href="css/media-querie.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Exemplo de site</title>
+</head>
+
+
+<body class="body">
+
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Looks</h1>
+        <h2 class="cabecalho__sub-titulo">Conheça nossos looks</h2>
+        <hr>
+        <nav class="navbar" role="navigation">
+            <input class="menu__btn" type="checkbox" id="menu-btn">
+            <label class="menu__icone" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="navbar__menu">
+                <li class="font-weight-bold">Filtrar por:</li>
+                <li><input class="navbar__menu__checkbox" type="checkbox" id="checkboxDisponível" name="Disponível"
+                        value="Disponível">Disponível</li>
+                <li class="dropdown__wrapper navbar__item">
+                    <a class="navbar__item" href="#">Preços
+                        &#5121;</a>
+                    <div class="navbar__drop-down">
+                        <p><input class="navbar__menu__checkbox" type="checkbox" id="precoUm" name="precos"
+                                value="precoUm">
+                            $</p>
+                        <p><input class="navbar__menu__checkbox" type="checkbox" id="precoDois" name="precos"
+                                value="precoDois">
+                            $$</p>
+                        <p><input class="navbar__menu__checkbox" type="checkbox" id="precoTres" name="precos"
+                                value="precoTres">
+                            $$$</p>
+                        <p><input class="navbar__menu__checkbox" type="checkbox" id="precoQuatro" name="precos"
+                                value="precoQuatro">
+                            $$$$</p>
+                    </div>
+                </li>
+                <li class="dropdown__wrapper navbar__item">
+                    <a class="navbar__item" href="#">Categorias
+                        &#5121; </a>
+                    <div class="navbar__drop-down">
+                        <p><input class="navbar__menu__checkbox" type="checkbox" id="blusa" name="categoria"
+                                value="blusa">
+                            Blusa</p>
+                        <p><input class="navbar__menu__checkbox" type="checkbox" id="casaco" name="categoria"
+                                value="casaco">
+                            Casaco</p>
+                        <p><input class="navbar__menu__checkbox" type="checkbox" id="vestido" name="categoria"
+                                value="vestido">
+                            Vestido</p>
+                        <p><input class="navbar__menu__checkbox" type="checkbox" id="calca" name="categoria"
+                                value="calca">
+                            Calça</p>
+                        <p><input class="navbar__menu__checkbox" type="checkbox" id="body" name="categoria"
+                                value="body">
+                            Body</p>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <button type="reset" class="btn border-dark rounded-0 btn__limpar pl-4 pr-4 font-weight-bold"
+                    id="limpaRadio">Limpar</button>
+            </form>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2 class="main__titulo"> Resultados </h2>
+
+        <section class="container-fluid p-2 m-0 container__ajustes">
+            <div class="row justify-content-center m-0 p-0" id="sectionCards">
+                <!-- cards montarão aqui -->
+            </div>
+        </section>
+
+        <form class="form-inline d-flex justify-content-center mb-5">
+            <button class="btn border-dark  rounded-0 pl-4 pr-4 mr-5 btn__proxima-pagina font-weight-bold"
+                type="button">próxima página</button>
+        </form>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="js/produtos.js"></script>
+    <script src="js/montaCards.js"></script>
+    <script src="js/verificaDisponibilidade.js"></script>
+    <script src="js/limpaBusca.js"></script>
+    <script src="js/calculaMedia.js"></script>
+</body>
+
+</html>
