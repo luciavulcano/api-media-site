@@ -17,9 +17,9 @@ function calculaMedia(produto) {
 
 
 function httpGet(parametro) {
-    let xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", 'http://api.mathjs.org/v4/?expr=' + parametro, false);
-    xmlHttp.send(null);
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", 'https://api.mathjs.org/v4/?expr=' + parametro, false);
+    xhr.send(null);
 
-    return xmlHttp.responseText;
+    return xhr.responseText;
 };
